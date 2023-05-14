@@ -1,0 +1,32 @@
+name: release
+# description:
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: run build.sh
+        run: sh build.sh
+
+      - name: Upload Release Asset
+        uses: actions/upload-artifact@v2
+        with:
+          name: jq for Magisk
+          path: JQ-FOR-MAGISK-v*.zip
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ github.ref_name }}
+          files: JQ-FOR-MAGISK-v*.zip
+          generate_release_notes: true
+
+
