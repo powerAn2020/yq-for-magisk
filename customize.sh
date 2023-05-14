@@ -28,9 +28,6 @@ ui_print "- Installing yq for Magisk/KernelSU"
 ui_print "- Extract the ZIP file and skip the META-INF folder into the $MODPATH folder"
 unzip -o "${ZIPFILE}" -x 'META-INF/*' -d "${MODPATH}" >&2
 
-# check OS
-
-# TODO auto update
 get_latest_release() {
   curl --silent "https://api.github.com/repos/mikefarah/yq/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
 }
@@ -41,6 +38,7 @@ if [ -z "$yq_version" ];then
 fi
 
 download_url="https://github.com/mikefarah/yq/releases/download/${yq_version}/yq_linux_"
+# check OS
 ui_print "OS ARCH is $ARCH"
 case $ARCH in
 arm)
