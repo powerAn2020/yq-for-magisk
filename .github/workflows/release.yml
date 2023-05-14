@@ -28,5 +28,6 @@ jobs:
           tag_name: ${{ github.ref_name }}
           files: JQ-FOR-MAGISK-v*.zip
           generate_release_notes: true
+          token: ${{ secrets.RELEASE_TOKEN }}
 
 
