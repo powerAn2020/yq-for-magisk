@@ -19,8 +19,8 @@ jobs:
       - name: Upload Release Asset
         uses: actions/upload-artifact@v2
         with:
-          name: jq for Magisk
-          path: JQ-FOR-MAGISK-v*.zip
+          name: yq for Magisk
+          path: YQ-FOR-MAGISK-v*.zip
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
