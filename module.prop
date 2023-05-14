@@ -1,0 +1,7 @@
+id=yq
+name=yq for Magisk
+version=v1.0
+versionCode=1
+author=powerAn2020
+description=a lightweight and portable command-line YAML processor. yq uses jq like syntax but works with yaml files as well as json. It doesn't yet support everything jq does - but it does support the most common operations and functions, and more is being added continuously.
+updateJson=<url> (optional)
