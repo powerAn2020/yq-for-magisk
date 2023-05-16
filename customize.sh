@@ -41,10 +41,7 @@ download_url="https://github.com/mikefarah/yq/releases/download/${yq_version}/yq
 # check OS
 ui_print "OS ARCH is $ARCH"
 case $ARCH in
-arm)
-download_url="${download_url}$ARCH"
-;;
-arm64)
+arm|arm64)
 download_url="${download_url}$ARCH"
 ;;
 x86)
