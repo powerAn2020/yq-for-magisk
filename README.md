@@ -20,6 +20,7 @@ This Magisk module provides a statically linked and stripped `yq` binary for ARM
 
 Thanks to @mikefarah for the convenient [yq](https://github.com/mikefarah/yq).</br>
 Thanks to @taamarin for  [Reference code](https://github.com/taamarin/box_for_magisk/blob/master/customize.sh) .</br>
+Thanks to ghproxy.com for  [github proxy server](https://ghproxy.com/) .</br>
 
 ## Links
 [yq](https://github.com/mikefarah/yq)
