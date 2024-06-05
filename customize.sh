@@ -63,7 +63,7 @@ while true ; do
   getevent -lc 1 2>&1 | grep KEY_VOLUME > $TMPDIR/events
   sleep 1
   if $(cat $TMPDIR/events | grep -q KEY_VOLUMEUP) ; then
-    download_url="https://ghproxy.com/$download_url"
+    download_url="https://mirror.ghproxy.com/$download_url"
     break
   elif $(cat $TMPDIR/events | grep -q KEY_VOLUMEDOWN) ; then
     break
